@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: justify;
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 1.7rem 1rem;
+            backdrop-filter: blur(10px);
+            background-color: transparent;
+        }
+
+        .logo {
+    display: flex;
+    font-size: 3.3rem;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 1rem; /* Ajusta el espacio entre la imagen y el texto */
+    order: -1; /* Cambia el orden de visualización para colocar la imagen a la izquierda */
+}
+        .logo a {
+            color: #FFB6C1;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #FFB6C1;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 0.4rem 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #FFB6C1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .social {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.4rem;
+            margin-top: 2.7rem;
+        }
+
+        .social a {
+            color: #FFB6C1;
+            font-size: 4rem;
+            border: 1.6px solid #fff;;
+            border-radius: 50%;
+            padding: .35rem;
+            text-align: center;
+            width: 56px;
+        }
+
+        .social a:hover {
+            color: #FFB6C1;
+            background-color: transparent;
+            transition: all .3s ease-in-out;
+        }
+
+        .main h1 span:nth-child(1) {
+            font-size: 1.5rem;
+        }
+
+        .button button {
+            background-color: transparent;
+            border: 1px solid #FFB6C1;
+            border-radius: 0.4rem;
+            margin-top: 2rem;
+            cursor: pointer;
+            padding: 0.8rem 1.2rem;
+        }
+
+        .button button:hover {
+            background-color: #FFB6C1;
+            color: #fff;
+            transition: all .3s ease-in-out;
+            transform: scale(.91);
+        }
+
+    button:hover {
+        background-color: #FF69B4;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo_osea_galla.png" alt="" width="25%">
+            <a href="index.html">Osea Galla</a>
+        </div>
+        
+        <nav>
+            <a href="index.html">Inicio</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Sobre Mí</h1>
+        <p>Hola, soy Osea Galla, una apasionada de las uñas y la belleza. Me dedico a proporcionar uñas press on de alta calidad y diseños modernos para que puedas lucir unas manos hermosas en cuestión de minutos.</p>
+        <p>En mi emprendimiento, Osea Galla, trabajo con materiales de primera calidad y sigo las últimas tendencias para ofrecerte opciones atractivas que se adapten a tu estilo personal. Mi objetivo es brindarte una experiencia conveniente y satisfactoria, sin la necesidad de acudir a un salón de belleza.</p>
+        <p>Te invito a que me sigas en mis redes sociales para que estés al tanto de mis últimos diseños y promociones:</p>
+        <div class="social">
+            <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:your-email@gmail.com"><i class="bi bi-google"></i></a>
+            <a href="javascript:void(0);" onclick="openWhatsApp();">
+                <i class="bi bi-whatsapp whatsapp-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            // Reemplaza '1234567890' con tu número de teléfono de WhatsApp y el código de país correspondiente
+            var phoneNumber = '+56981384902';
+
+            // Puedes agregar un mensaje predeterminado utilizando el parámetro 'text'
+            var message = '¡Hola! Quiero contactar contigo.';
+
+            // Construye la URL de WhatsApp con el número de teléfono y el mensaje
+            var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+
+            // Abre la URL en una nueva pestaña o ventana
+            window.open(url);
+        }
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <script>
+        function openInstagram() {
+            window.open('https://www.instagram.com');
+        }
+    </script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+</style>
+</body>
+
+</html>

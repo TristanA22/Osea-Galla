@@ -1,0 +1,158 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container .carousel-inner {
+    flex: 1;
+}
+
+.carousel-container .product-details {
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 0.5rem;
+}
+
+.carousel-container .product-details h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-container .product-details p {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.carousel-container .product-details .button {
+    margin-top: 1rem;
+}
+
+.carousel-container .product-details button {
+    background-color: #FFB6C1;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.carousel-container .product-details button:hover {
+    background-color: #FF8CA9;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-container .product-details {
+        margin-top: 2rem;
+        margin-left: 0;
+        align-self: flex-start;
+    }
+    .title {
+        text-align: center;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* Estilos para pantallas más grandes */
+      
+        /* Ajustar el tamaño del encabezado */
+        header {
+          padding: 1.7rem 1rem;
+          max-width: 80%;
+          margin: auto;
+        }
+      
+        /* Alinear el logotipo al centro */
+        .logo {
+          justify-content: center;
+          font-size: 2.5rem;
+          margin-right: 0;
+        }
+      
+        /* Alinear los elementos de navegación al centro */
+        nav {
+          justify-content: center;
+          top: auto;
+          right: 0;
+          left: auto;
+          display: flex;
+          position: relative;
+        }
+      
+        /* Espaciado entre los elementos de navegación */
+        nav a {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+      
+        /* Ajustar el tamaño de la fuente en el encabezado */
+        .main h1 {
+          font-size: 3rem;
+        }
+      
+        /* Ajustar el tamaño de la fuente en los párrafos */
+        .main p {
+          font-size: 1rem;
+        }
+      
+        /* Cambiar el tamaño de la imagen en el contenedor */
+        .images img {
+          width: 80%;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        /* Estilos para dispositivos móviles y tabletas */
+      
+        /* Ajustar el tamaño del encabezado */
+        header {
+          padding: 0.7rem 1rem;
+        }
+      
+        /* Ajustar el tamaño del logotipo */
+        .logo {
+          font-size: 2rem;
+        }
+      
+        /* Alinear los elementos de navegación en una columna */
+        nav {
+          position: static;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          background-color: #fff;
+          left: 0;
+          top: 75px;
+          width: 100%;
+        }
+      
+        /* Espaciado entre los elementos de navegación */
+        nav a {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        /* Ajustar el tamaño de la fuente en el encabezado */
+        .main h1 {
+          font-size: 2rem;
+        }
+      
+        /* Ajustar el tamaño de la fuente en los párrafos */
+        .main p {
+          font-size: 0.9rem;
+        }
+      
+        /* Ajustar el tamaño de la imagen en el contenedor */
+        .images img {
+          width: 100%;
+        }
+      }
+      
+}

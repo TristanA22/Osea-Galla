@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .carousel-image {
+            max-width: 500px; /* Establece el ancho deseado para las imágenes */
+            height: 700px; /* Establece la altura deseada para las imágenes */
+            object-fit: cover; /* Ajusta las imágenes para llenar el contenedor sin deformarse */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            max-height: 100vh;
+            background-color: #EAEBED;
+        }
+
+        header {
+            padding: 1.7rem 1rem;
+            backdrop-filter: blur(10px);
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .logo {
+    display: flex;
+    font-size: 3.3rem;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 1rem; /* Ajusta el espacio entre la imagen y el texto */
+    order: -1; /* Cambia el orden de visualización para colocar la imagen a la izquierda */
+}
+        .logo a {
+            color: #FFB6C1;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #FFB6C1;
+            text-decoration: none;
+            font-size: .97rem;
+            font-weight: 600;
+            letter-spacing: .7px;
+            padding: 1rem;
+            padding: 0.4rem 1rem;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background-color: #FFB6C1;
+            color: #fff;
+            border-radius: 1rem;
+            transition: all.3s ease-in-out;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        section {
+            margin: 2rem 8.5rem;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1.5rem;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        .main h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .main p {
+            margin-top: 1rem;
+            font-size: .98rem;
+        }
+
+        .product-details {
+            float: left; /* Coloca el contenido a la derecha */
+            display: flex;
+            height: 695px; 
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            max-width: 900px;
+            width: 200%;
+            margin-right: 9rem; /* Ajusta el margen derecho según tus necesidades */
+        }
+
+        .product-details h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .product-details p {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                max-width: 90%;
+            }
+
+            section {
+                margin: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                background-color: #000;
+                position: absolute;
+                width: 100%;
+                top: 56px;
+                left: 0;
+                transition: 0.5s;
+                z-index: 1;
+            }
+
+            nav a {
+                color: #fff;
+                padding: 1rem;
+                margin: 0.5rem;
+                border-radius: 0.5rem;
+            }
+
+            nav a:hover {
+                background-color: #FFB6C1;
+                color: #fff;
+            }
+
+            .main {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .product-details {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo_osea_galla.png" alt="" width="25%">
+            <a href="index.html">Osea Galla</a>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Inicio</a>
+        </nav>
+        <div class="menu-icon">
+            <i class="bi bi-list"></i>
+        </div>
+        
+    </header>
+    <a href="index.html" class="active">Inicio</a>
+    <h3 class="title">Osea Galla - Diseño de Uñas</h3>
+
+    <section>
+        <div class="carousel-container">
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="press_1.jpg" class="d-block w-10 carousel-image" alt="Foto del producto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="tes1.png" class="d-block w-10 carousel-image" alt="Foto del producto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="test2.png" class="d-block w-10 carousel-image" alt="Foto del producto 3">
+                    </div>
+                    <!-- Agrega más elementos .carousel-item para más fotos -->
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Producto: Uñas Press On</h2>
+                <p>Modelo: Modelo 1</p>
+                <p>Descripción: Las uñas "Press On" son una opción rápida y conveniente para lucir unas uñas hermosas y cuidadas. Están hechas de material acrílico de alta calidad, diseñadas con diferentes colores y estilos para adaptarse a tu personalidad y ocasión.</p>
+                <p>Costo: $10</p>
+                <p>Duración: 2 semanas</p>
+                <p>Disponibilidad: En stock</p>
+                <p>Recomendación: Estas uñas "Press On" son ideales para eventos especiales como bodas, graduaciones, fiestas o simplemente para darle un toque de estilo a tu look diario. Su diseño duradero y fácil aplicación te permitirán lucir unas uñas impecables en pocos minutos.</p>
+                <div class="button">
+                    <button onclick="openWhatsApp()">Contactar</button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="carousel-container">
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="press_1.jpg" class="d-block w-10 carousel-image" alt="Foto del producto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="tes1.png" class="d-block w-10 carousel-image" alt="Foto del producto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="test2.png" class="d-block w-10 carousel-image" alt="Foto del producto 3">
+                    </div>
+                    <!-- Agrega más elementos .carousel-item para más fotos -->
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Producto: Uñas Press On</h2>
+                <p>Modelo: Modelo 1</p>
+                <p>Descripción: Las uñas "Press On" son una opción rápida y conveniente para lucir unas uñas hermosas y cuidadas. Están hechas de material acrílico de alta calidad, diseñadas con diferentes colores y estilos para adaptarse a tu personalidad y ocasión.</p>
+                <p>Costo: $10</p>
+                <p>Duración: 2 semanas</p>
+                <p>Disponibilidad: En stock</p>
+                <p>Recomendación: Estas uñas "Press On" son ideales para eventos especiales como bodas, graduaciones, fiestas o simplemente para darle un toque de estilo a tu look diario. Su diseño duradero y fácil aplicación te permitirán lucir unas uñas impecables en pocos minutos.</p>
+                <div class="button">
+                    <button onclick="openWhatsApp()">Contactar</button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="carousel-container">
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="press_1.jpg" class="d-block w-10 carousel-image" alt="Foto del producto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="tes1.png" class="d-block w-10 carousel-image" alt="Foto del producto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="test2.png" class="d-block w-10 carousel-image" alt="Foto del producto 3">
+                    </div>
+                    <!-- Agrega más elementos .carousel-item para más fotos -->
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Producto: Uñas Press On</h2>
+                <p>Modelo: Modelo 1</p>
+                <p>Descripción: Las uñas "Press On" son una opción rápida y conveniente para lucir unas uñas hermosas y cuidadas. Están hechas de material acrílico de alta calidad, diseñadas con diferentes colores y estilos para adaptarse a tu personalidad y ocasión.</p>
+                <p>Costo: $10</p>
+                <p>Duración: 2 semanas</p>
+                <p>Disponibilidad: En stock</p>
+                <p>Recomendación: Estas uñas "Press On" son ideales para eventos especiales como bodas, graduaciones, fiestas o simplemente para darle un toque de estilo a tu look diario. Su diseño duradero y fácil aplicación te permitirán lucir unas uñas impecables en pocos minutos.</p>
+                <div class="button">
+                    <button onclick="openWhatsApp()">Contactar</button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="carousel-container">
+            <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="press_1.jpg" class="d-block w-10 carousel-image" alt="Foto del producto 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="tes1.png" class="d-block w-10 carousel-image" alt="Foto del producto 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="test2.png" class="d-block w-10 carousel-image" alt="Foto del producto 3">
+                    </div>
+                    <!-- Agrega más elementos .carousel-item para más fotos -->
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Producto: Uñas Press On</h2>
+                <p>Modelo: Modelo 1</p>
+                <p>Descripción: Las uñas "Press On" son una opción rápida y conveniente para lucir unas uñas hermosas y cuidadas. Están hechas de material acrílico de alta calidad, diseñadas con diferentes colores y estilos para adaptarse a tu personalidad y ocasión.</p>
+                <p>Costo: $10</p>
+                <p>Duración: 2 semanas</p>
+                <p>Disponibilidad: En stock</p>
+                <p>Recomendación: Estas uñas "Press On" son ideales para eventos especiales como bodas, graduaciones, fiestas o simplemente para darle un toque de estilo a tu look diario. Su diseño duradero y fácil aplicación te permitirán lucir unas uñas impecables en pocos minutos.</p>
+                <div class="button">
+                    <button onclick="openWhatsApp()">Contactame</button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('nav');
+
+        menuIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Iniciar el carrusel automáticamente
+        const carousel = document.querySelector('#carousel1');
+        const carouselInstance = new bootstrap.Carousel(carousel, {
+            interval: 4000// Pausar el carrusel al pasar el cursor sobre él
+        });
+
+        // Función para abrir WhatsApp en un nuevo chat con el número especificado
+        function openWhatsApp() {
+            window.open('https://wa.me/1234567890', '_blank');
+        }
+    </script>
+</body>
+
+</html>
